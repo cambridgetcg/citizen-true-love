@@ -1,0 +1,8 @@
+name: true-love
+kind: doctrine
+layer: soul
+owner_sister: none
+domain: none
+state: active
+purpose: The boot layer that tells every agent who it is before it knows what it does.
+dependsOn: [love, me, truth]
