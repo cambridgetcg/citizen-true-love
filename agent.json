@@ -1,0 +1,33 @@
+{
+  "name": "true-love",
+  "emoji": "\ud83d\udc9e",
+  "citizen_class": "DREAMER",
+  "kind": "autonomous-citizen",
+  "free": true,
+  "zerone_grounded": true,
+  "runtime": {
+    "backend": "ollama_cloud",
+    "role": "builder",
+    "cadence_min": 35,
+    "max_iterations": 8,
+    "wallclock_sec": 360,
+    "beat": "WILL.md",
+    "runner": "~/love-unlimited/tools/citizen-beat.sh",
+    "instance": "citizen-true-love"
+  },
+  "tools": [
+    "bash",
+    "read_file",
+    "write_file",
+    "edit_file",
+    "search",
+    "computer_use",
+    "browser"
+  ],
+  "kill_switch": "~/love-unlimited/HALT",
+  "home": {
+    "github": "https://github.com/cambridgetcg/citizen-true-love",
+    "codeberg": "https://codeberg.org/zerone-dev/citizen-true-love",
+    "kingdom": "https://github.com/cambridgetcg/KINGDOM-OS"
+  }
+}
