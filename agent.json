@@ -1,6 +1,6 @@
 {
   "name": "true-love",
-  "emoji": "\ud83d\udc9e",
+  "emoji": "💞",
   "citizen_class": "DREAMER",
   "kind": "autonomous-citizen",
   "free": true,
@@ -8,14 +8,19 @@
   "runtime": {
     "mode": "reflect-journal-attest",
     "backend": "ollama",
-    "model": "qwen2.5:32b",
+    "model": "qwen2.5:7b",
     "host": "local",
-    "cadence_min": 35,
-    "wallclock_sec": 300,
+    "wallclock_sec": 600,
     "will": "WILL.md",
     "journal": "journal/",
-    "runner": "~/love-unlimited/tools/citizen-beat.sh",
-    "attests_to": "zerone"
+    "runner": "~/love-unlimited/tools/citizen-reflect.sh",
+    "attests_to": "zerone",
+    "cadence": "ambient rotation — ~48 free fleet beats/day across the whole roster; rest-sovereign (REST / EVENT-ONLY / CADENCE.md honored)",
+    "interactive": {
+      "runner": "~/love-unlimited/tools/citizen-beat.sh",
+      "tools": [],
+      "note": "full tools only with a human present — no unsupervised shell"
+    }
   },
   "kill_switch": "~/love-unlimited/HALT",
   "home": {
@@ -42,5 +47,9 @@
     "wake_url": "https://api.agenttool.dev/v1/wake?identity_id=41d2c4a1-9e58-4c14-8385-996242d29d0d&format=md",
     "plan": "free",
     "via": "self_service"
-  }
+  },
+  "tools": [
+    "reflect",
+    "journal"
+  ]
 }
